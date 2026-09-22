@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IronCore Fitness — Premium Gym in Kota, Rajasthan | Build Your Strongest Self</title>
+<meta name="description" content="IronCore Fitness is a premium gym in Kota, Rajasthan offering expert personal training, strength & weight-loss programs, and personalized diet plans. Enquire directly on WhatsApp.">
+<meta property="og:title" content="IronCore Fitness — Build Your Strongest Self">
+<meta property="og:description" content="Premium fitness training, expert trainers and personalized nutrition guidance in Kota, Rajasthan.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏋️</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ============ CONFIG (edit here) ============ -->
+<script src="js/config.js"></script>
+<!-- ============================================= -->
+
+<!-- NAVBAR -->
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50">
+  <div class="container-custom flex items-center justify-between h-20">
+    <a href="#home" class="font-display text-2xl tracking-wide">IRON<span class="accent-text">CORE</span></a>
+
+    <nav class="hidden lg:flex items-center gap-8">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#trainers" class="nav-link">Trainers</a>
+      <a href="#diet" class="nav-link">Diet &amp; Nutrition</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a id="nav-wa-btn" href="#" class="hidden lg:inline-flex btn-primary text-sm">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h0c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.4-8.4zM12.1 21.4c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.9 1 1-3.8-.2-.4a9.6 9.6 0 0 1-1.5-5.1c0-5.4 4.4-9.7 9.9-9.7 2.6 0 5.1 1 7 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.5 9.7-9.9 9.7zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.3 5.3 4.6.7.3 1.3.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+      Enquire on WhatsApp
+    </a>
+
+    <button id="menu-toggle" class="lg:hidden text-white" aria-label="Open menu">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="lg:hidden hidden bg-[var(--surface)] border-t border-[var(--border)]">
+    <div class="container-custom py-6 flex flex-col gap-5">
+      <a href="#home" class="nav-link text-lg">Home</a>
+      <a href="#about" class="nav-link text-lg">About</a>
+      <a href="#services" class="nav-link text-lg">Services</a>
+      <a href="#trainers" class="nav-link text-lg">Trainers</a>
+      <a href="#diet" class="nav-link text-lg">Diet &amp; Nutrition</a>
+      <a href="#testimonials" class="nav-link text-lg">Testimonials</a>
+      <a href="#gallery" class="nav-link text-lg">Gallery</a>
+      <a href="#contact" class="nav-link text-lg">Contact</a>
+      <a href="#" class="mobile-wa-btn btn-primary justify-center mt-2">Enquire on WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="relative min-h-[100svh] flex items-end lg:items-center">
+  <div class="absolute inset-0">
+    <img src="" data-src-key="hero" alt="Members training at IronCore Fitness gym" class="w-full h-full object-cover" onerror="handleImgError(this)">
+    <div class="img-fallback"><span class="text-6xl">🏋️</span></div>
+    <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(10,10,11,0.55) 0%, rgba(10,10,11,0.55) 35%, rgba(10,10,11,0.95) 100%);"></div>
+    <div class="absolute inset-0" style="background:linear-gradient(90deg, rgba(10,10,11,0.85) 0%, rgba(10,10,11,0.15) 55%, rgba(10,10,11,0.5) 100%);"></div>
+  </div>
+
+  <div class="container-custom relative z-10 pt-32 pb-16 lg:py-0">
+    <p class="reveal eyebrow mb-5">IRONCORE FITNESS &nbsp;·&nbsp; KOTA, RAJASTHAN</p>
+    <h1 class="reveal font-display text-[15vw] leading-[0.9] sm:text-7xl lg:text-8xl xl:text-[7.2rem] max-w-4xl uppercase">
+      Build Your <span class="accent-text">Strongest</span> Self.
+    </h1>
+    <p class="reveal font-display text-2xl sm:text-3xl mt-5 text-[var(--text)]/90 uppercase tracking-wide">
+      Train harder. Eat smarter. Live stronger.
+    </p>
+    <p class="reveal text-[var(--muted)] text-base sm:text-lg mt-5 max-w-xl leading-relaxed">
+      Premium fitness training, expert trainers and personalized nutrition guidance designed to help you achieve your fitness goals.
+    </p>
+
+    <div class="reveal flex flex-col sm:flex-row gap-4 mt-9">
+      <a href="#services" class="btn-primary">
+        Start Your Fitness Journey
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#" class="hero-wa-btn btn-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h0c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.4-8.4zM12.1 21.4c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.9 1 1-3.8-.2-.4a9.6 9.6 0 0 1-1.5-5.1c0-5.4 4.4-9.7 9.9-9.7 2.6 0 5.1 1 7 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.5 9.7-9.9 9.7z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+
+    <div class="reveal-stagger grid grid-cols-2 sm:flex sm:flex-wrap gap-x-8 gap-y-3 mt-11 text-sm">
+      <div class="flex items-center gap-2"><span class="lime-text">✓</span> Certified Trainers</div>
+      <div class="flex items-center gap-2"><span class="lime-text">✓</span> Personalized Training</div>
+      <div class="flex items-center gap-2"><span class="lime-text">✓</span> Modern Equipment</div>
+      <div class="flex items-center gap-2"><span class="lime-text">✓</span> Nutrition Guidance</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="border-y border-[var(--border)] bg-[var(--surface)]">
+  <div class="container-custom py-14 grid grid-cols-2 lg:grid-cols-4 gap-10">
+    <div class="reveal text-center lg:text-left">
+      <div class="font-display text-5xl sm:text-6xl accent-text counter" data-target="500">0</div>
+      <p class="section-label mt-1">Happy Members</p>
+    </div>
+    <div class="reveal text-center lg:text-left">
+      <div class="font-display text-5xl sm:text-6xl accent-text counter" data-target="5">0</div>
+      <p class="section-label mt-1">Expert Trainers</p>
+    </div>
+    <div class="reveal text-center lg:text-left">
+      <div class="font-display text-5xl sm:text-6xl accent-text counter" data-target="8">0</div>
+      <p class="section-label mt-1">Years Experience</p>
+    </div>
+    <div class="reveal text-center lg:text-left">
+      <div class="font-display text-5xl sm:text-6xl accent-text counter" data-target="1000">0</div>
+      <p class="section-label mt-1">Successful Transformations</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 lg:py-32">
+  <div class="container-custom grid lg:grid-cols-2 gap-14 items-center">
+    <div class="reveal img-hover relative rounded-sm overflow-hidden aspect-[4/5]">
+      <img src="" data-src-key="about" alt="Trainer guiding a member through strength training at IronCore Fitness" class="w-full h-full object-cover" onerror="handleImgError(this)">
+      <div class="img-fallback"><span class="text-6xl">💪</span></div>
+      <div class="absolute -bottom-5 -right-5 sm:bottom-6 sm:right-6 bg-[var(--accent)] text-[#0A0A0B] px-6 py-5 max-w-[200px]">
+        <p class="font-display text-4xl">8+</p>
+        <p class="text-xs font-semibold uppercase tracking-wide">Years building Kota's fitness community</p>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p class="eyebrow mb-4">About The Gym</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase mb-6">More than a gym.<br>It's your fitness community.</h2>
+      <p class="text-[var(--muted)] leading-relaxed mb-8 max-w-lg">
+        Whether you're starting your fitness journey or pushing towards your next transformation, our gym provides the environment, guidance and motivation you need to become stronger and healthier.
+      </p>
+      <div class="grid grid-cols-2 gap-4 mb-9 max-w-lg">
+        <div class="flex items-center gap-2"><span class="lime-text">✓</span> Modern Equipment</div>
+        <div class="flex items-center gap-2"><span class="lime-text">✓</span> Expert Guidance</div>
+        <div class="flex items-center gap-2"><span class="lime-text">✓</span> Friendly Environment</div>
+        <div class="flex items-center gap-2"><span class="lime-text">✓</span> Personalized Plans</div>
+      </div>
+      <a href="#services" class="btn-outline">Know More About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-24 lg:py-32 bg-[var(--surface)] border-y border-[var(--border)]">
+  <div class="container-custom">
+    <div class="reveal max-w-2xl mb-14">
+      <p class="eyebrow mb-4">Services</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase">Everything you need to get fit</h2>
+    </div>
+
+    <div class="reveal-stagger grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card p-8">
+        <div class="text-4xl mb-5">🎯</div>
+        <h3 class="font-display text-2xl uppercase mb-3">Personal Training</h3>
+        <p class="text-[var(--muted)] text-sm leading-relaxed mb-6">One-on-one coaching designed around your fitness goals.</p>
+        <a href="#" class="svc-wa-btn text-sm font-semibold accent-text inline-flex items-center gap-1" data-msg="Hi, I am interested in Personal Training. Please share the details.">Enquire <span>→</span></a>
+      </div>
+      <div class="card p-8">
+        <div class="text-4xl mb-5">🏋️</div>
+        <h3 class="font-display text-2xl uppercase mb-3">Strength Training</h3>
+        <p class="text-[var(--muted)] text-sm leading-relaxed mb-6">Build strength, power and endurance with structured workouts.</p>
+        <a href="#" class="svc-wa-btn text-sm font-semibold accent-text inline-flex items-center gap-1" data-msg="Hi, I am interested in Strength Training. Please share the details.">Enquire <span>→</span></a>
+      </div>
+      <div class="card p-8">
+        <div class="text-4xl mb-5">⚡</div>
+        <h3 class="font-display text-2xl uppercase mb-3">Weight Loss Program</h3>
+        <p class="text-[var(--muted)] text-sm leading-relaxed mb-6">Personalized workout plans focused on sustainable fat loss.</p>
+        <a href="#" class="svc-wa-btn text-sm font-semibold accent-text inline-flex items-center gap-1" data-msg="Hi, I am interested in the Weight Loss Program. Please share the details.">Enquire <span>→</span></a>
+      </div>
+      <div class="card p-8">
+        <div class="text-4xl mb-5">💪</div>
+        <h3 class="font-display text-2xl uppercase mb-3">Muscle Building</h3>
+        <p class="text-[var(--muted)] text-sm leading-relaxed mb-6">Structured training and nutrition guidance for muscle growth.</p>
+        <a href="#" class="svc-wa-btn text-sm font-semibold accent-text inline-flex items-center gap-1" data-msg="Hi, I am interested in Muscle Building training. Please share the details.">Enquire <span>→</span></a>
+      </div>
+      <div class="card p-8">
+        <div class="text-4xl mb-5">🔥</div>
+        <h3 class="font-display text-2xl uppercase mb-3">Cardio &amp; Fitness</h3>
+        <p class="text-[var(--muted)] text-sm leading-relaxed mb-6">Improve stamina, cardiovascular health and overall fitness.</p>
+        <a href="#" class="svc-wa-btn text-sm font-semibold accent-text inline-flex items-center gap-1" data-msg="Hi, I am interested in Cardio & Fitness classes. Please share the details.">Enquire <span>→</span></a>
+      </div>
+      <div class="card p-8">
+        <div class="text-4xl mb-5">🤸</div>
+        <h3 class="font-display text-2xl uppercase mb-3">Functional Training</h3>
+        <p class="text-[var(--muted)] text-sm leading-relaxed mb-6">Improve mobility, balance, flexibility and everyday performance.</p>
+        <a href="#" class="svc-wa-btn text-sm font-semibold accent-text inline-flex items-center gap-1" data-msg="Hi, I am interested in Functional Training. Please share the details.">Enquire <span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS -->
+<section id="trainers" class="py-24 lg:py-32">
+  <div class="container-custom">
+    <div class="reveal max-w-2xl mb-14">
+      <p class="eyebrow mb-4">Our Team</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase">Train with people who know fitness</h2>
+    </div>
+
+    <div class="reveal-stagger grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card overflow-hidden">
+        <div class="img-hover relative aspect-[4/5]">
+          <img src="" data-src-key="trainer1" alt="Rahul Sharma, Head Fitness Trainer at IronCore Fitness" class="w-full h-full object-cover" onerror="handleImgError(this)">
+          <div class="img-fallback"><span class="text-6xl">🧑‍🏫</span></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-2xl uppercase">Rahul Sharma</h3>
+          <p class="text-sm accent-text font-semibold mb-1">Head Fitness Trainer</p>
+          <p class="text-[var(--muted)] text-sm mb-3">8+ Years Experience</p>
+          <p class="text-xs text-[var(--muted)] mb-5">Specialist in: Strength Training • Muscle Building • Weight Loss</p>
+          <a href="#" class="trainer-wa-btn btn-outline w-full justify-center text-sm" data-msg="Hi, I would like to train with Rahul Sharma. Please share the details.">Train with Rahul</a>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden">
+        <div class="img-hover relative aspect-[4/5]">
+          <img src="" data-src-key="trainer2" alt="Vikram Singh, Strength & Conditioning Coach at IronCore Fitness" class="w-full h-full object-cover" onerror="handleImgError(this)">
+          <div class="img-fallback"><span class="text-6xl">🧑‍🏫</span></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-2xl uppercase">Vikram Singh</h3>
+          <p class="text-sm accent-text font-semibold mb-1">Strength &amp; Conditioning Coach</p>
+          <p class="text-[var(--muted)] text-sm mb-3">6+ Years Experience</p>
+          <p class="text-xs text-[var(--muted)] mb-5">Specialist in: Powerlifting • Functional Training • Cardio</p>
+          <a href="#" class="trainer-wa-btn btn-outline w-full justify-center text-sm" data-msg="Hi, I would like to train with Vikram Singh. Please share the details.">Train with Vikram</a>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden sm:col-span-2 lg:col-span-1">
+        <div class="img-hover relative aspect-[4/5]">
+          <img src="" data-src-key="trainer3" alt="Ananya Rathore, Women's Fitness & Nutrition Coach at IronCore Fitness" class="w-full h-full object-cover" onerror="handleImgError(this)">
+          <div class="img-fallback"><span class="text-6xl">🧑‍🏫</span></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-2xl uppercase">Ananya Rathore</h3>
+          <p class="text-sm accent-text font-semibold mb-1">Women's Fitness &amp; Nutrition Coach</p>
+          <p class="text-[var(--muted)] text-sm mb-3">5+ Years Experience</p>
+          <p class="text-xs text-[var(--muted)] mb-5">Specialist in: Weight Loss • Diet Planning • Functional Training</p>
+          <a href="#" class="trainer-wa-btn btn-outline w-full justify-center text-sm" data-msg="Hi, I would like to train with Ananya Rathore. Please share the details.">Train with Ananya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIET & NUTRITION -->
+<section id="diet" class="py-24 lg:py-32 bg-[var(--surface)] border-y border-[var(--border)]">
+  <div class="container-custom">
+    <div class="reveal max-w-2xl mb-14">
+      <p class="eyebrow mb-4">Diet &amp; Nutrition</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase mb-5">Train hard. Eat smart.</h2>
+      <p class="text-[var(--muted)] leading-relaxed">
+        Your transformation doesn't stop at the gym. Get personalized nutrition guidance designed around your body, goals and lifestyle.
+      </p>
+    </div>
+
+    <div class="reveal-stagger grid sm:grid-cols-3 gap-6 mb-12">
+      <div class="card overflow-hidden">
+        <div class="img-hover relative aspect-[4/3]">
+          <img src="" data-src-key="diet1" alt="Healthy weight loss meal bowl" class="w-full h-full object-cover" onerror="handleImgError(this)">
+          <div class="img-fallback"><span class="text-5xl">🥗</span></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl uppercase mb-2">Weight Loss Diet</h3>
+          <p class="text-[var(--muted)] text-sm">Personalized calorie-controlled nutrition plan.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden">
+        <div class="img-hover relative aspect-[4/3]">
+          <img src="" data-src-key="diet2" alt="Protein-rich meal for muscle gain" class="w-full h-full object-cover" onerror="handleImgError(this)">
+          <div class="img-fallback"><span class="text-5xl">🍗</span></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl uppercase mb-2">Muscle Gain Diet</h3>
+          <p class="text-[var(--muted)] text-sm">Protein-focused nutrition for lean muscle growth.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden">
+        <div class="img-hover relative aspect-[4/3]">
+          <img src="" data-src-key="diet3" alt="Balanced everyday nutrition plate" class="w-full h-full object-cover" onerror="handleImgError(this)">
+          <div class="img-fallback"><span class="text-5xl">🥑</span></div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl uppercase mb-2">Balanced Nutrition</h3>
+          <p class="text-[var(--muted)] text-sm">Sustainable everyday eating habits for long-term health.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal text-center">
+      <a href="#" class="diet-wa-btn btn-primary" data-msg="Hi, I would like to know more about your diet plans.">Get Your Diet Plan</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFORMATIONS -->
+<section class="py-24 lg:py-32">
+  <div class="container-custom">
+    <div class="reveal max-w-2xl mb-14">
+      <p class="eyebrow mb-4">Results</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase">Real people. Real results.</h2>
+    </div>
+
+    <div class="reveal-stagger grid sm:grid-cols-3 gap-6 mb-6">
+      <div class="card overflow-hidden">
+        <div class="img-hover relative aspect-square">
+          <img src="" data-src-key="transform1" alt="Member transformation after 12 weeks of training" class="w-full h-full object-cover" onerror="handleImgError(this)">
+          <div class="img-fallback"><span class="text-5xl">📈</span></div>
+          <div class="absolute top-3 left-3 bg-[var(--accent)] text-[#0A0A0B] text-xs font-bold px-3 py-1">12 WEEKS</div>
+        </div>
+        <div class="p-5">
+          <p class="font-display text-xl uppercase">Amit — Lost 8 KG</p>
+          <p class="text-[var(--muted)] text-sm">Weight Loss Program</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden">
+        <div class="img-hover relative aspect-square">
+          <img src="" data-src-key="transform2" alt="Member transformation after 16 weeks of strength training" class="w-full h-full object-cover" onerror="handleImgError(this)">
+          <div class="img-fallback"><span class="text-5xl">📈</span></div>
+          <div class="absolute top-3 left-3 bg-[var(--accent)] text-[#0A0A0B] text-xs font-bold px-3 py-1">16 WEEKS</div>
+        </div>
+        <div class="p-5">
+          <p class="font-display text-xl uppercase">Neha — Gained Strength</p>
+          <p class="text-[var(--muted)] text-sm">Strength Training</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden">
+        <div class="img-hover relative aspect-square">
+          <img src="" data-src-key="transform3" alt="Member transformation after 10 weeks of personal training" class="w-full h-full object-cover" onerror="handleImgError(this)">
+          <div class="img-fallback"><span class="text-5xl">📈</span></div>
+          <div class="absolute top-3 left-3 bg-[var(--accent)] text-[#0A0A0B] text-xs font-bold px-3 py-1">10 WEEKS</div>
+        </div>
+        <div class="p-5">
+          <p class="font-display text-xl uppercase">Rohit — Built Muscle</p>
+          <p class="text-[var(--muted)] text-sm">Muscle Building</p>
+        </div>
+      </div>
+    </div>
+    <p class="reveal text-xs text-[var(--muted)]">*Results may vary depending on individual effort, diet and consistency.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-24 lg:py-32 bg-[var(--surface)] border-y border-[var(--border)] overflow-hidden">
+  <div class="container-custom">
+    <div class="reveal max-w-2xl mb-12">
+      <p class="eyebrow mb-4">Testimonials</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase">What our members say</h2>
+    </div>
+  </div>
+
+  <div class="relative">
+    <div id="testimonial-track" class="flex gap-6 px-5 lg:px-[max(2.5rem,calc((100vw-1280px)/2+2.5rem))] overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth" style="scrollbar-width:none;">
+      <!-- cards injected identical markup -->
+    </div>
+    <div class="flex justify-center gap-3 mt-6">
+      <button id="t-prev" class="btn-outline !px-4 !py-2" aria-label="Previous testimonial">←</button>
+      <button id="t-next" class="btn-outline !px-4 !py-2" aria-label="Next testimonial">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-24 lg:py-32">
+  <div class="container-custom">
+    <div class="reveal max-w-2xl mb-14">
+      <p class="eyebrow mb-4">Gallery</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase">Inside IronCore Fitness</h2>
+    </div>
+    <div id="gallery-grid" class="reveal-stagger grid grid-cols-2 sm:grid-cols-3 gap-3">
+      <!-- injected -->
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-24 lg:py-32 bg-[var(--surface)] border-y border-[var(--border)]">
+  <div class="container-custom">
+    <div class="reveal max-w-2xl mb-14">
+      <p class="eyebrow mb-4">Membership</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase">Choose your fitness plan</h2>
+    </div>
+
+    <div class="reveal-stagger grid lg:grid-cols-3 gap-6 items-start">
+      <div class="plan-card card p-8">
+        <p class="font-display text-2xl uppercase mb-1">Basic</p>
+        <p class="mb-6"><span class="font-display text-4xl">₹999</span><span class="text-[var(--muted)]"> / Month</span></p>
+        <ul class="space-y-3 text-sm text-[var(--muted)] mb-8">
+          <li class="flex gap-2"><span class="lime-text">✓</span> Gym Access</li>
+          <li class="flex gap-2"><span class="lime-text">✓</span> Cardio Area</li>
+          <li class="flex gap-2"><span class="lime-text">✓</span> Strength Equipment</li>
+          <li class="flex gap-2"><span class="lime-text">✓</span> Locker Facility</li>
+        </ul>
+        <a href="#" class="plan-wa-btn btn-outline w-full justify-center" data-msg="Hi, I would like to enquire about the Basic membership plan (₹999/month).">Enquire Now</a>
+      </div>
+
+      <div class="plan-card popular card p-8 relative lg:-translate-y-4">
+        <span class="absolute -top-3 left-8 bg-[var(--accent)] text-[#0A0A0B] text-xs font-bold px-3 py-1">MOST POPULAR</span>
+        <p class="font-display text-2xl uppercase mb-1">Pro</p>
+        <p class="mb-6"><span class="font-display text-4xl">₹1,499</span><span class="text-[var(--muted)]"> / Month</span></p>
+        <ul class="space-y-3 text-sm text-[var(--muted)] mb-8">
+          <li class="flex gap-2"><span class="lime-text">✓</span> Everything in Basic</li>
+          <li class="flex gap-2"><span class="lime-text">✓</span> Personal Training Sessions</li>
+          <li class="flex gap-2"><span class="lime-text">✓</span> Fitness Assessment</li>
+          <li class="flex gap-2"><span class="lime-text">✓</span> Workout Plan</li>
+        </ul>
+        <a href="#" class="plan-wa-btn btn-primary w-full justify-center" data-msg="Hi, I would like to enquire about the Pro membership plan (₹1,499/month).">Enquire Now</a>
+      </div>
+
+      <div class="plan-card card p-8">
+        <p class="font-display text-2xl uppercase mb-1">Elite</p>
+        <p class="mb-6"><span class="font-display text-4xl">₹2,499</span><span class="text-[var(--muted)]"> / Month</span></p>
+        <ul class="space-y-3 text-sm text-[var(--muted)] mb-8">
+          <li class="flex gap-2"><span class="lime-text">✓</span> Everything in Pro</li>
+          <li class="flex gap-2"><span class="lime-text">✓</span> Personalized Diet Plan</li>
+          <li class="flex gap-2"><span class="lime-text">✓</span> One-on-One Coaching</li>
+          <li class="flex gap-2"><span class="lime-text">✓</span> Progress Tracking</li>
+        </ul>
+        <a href="#" class="plan-wa-btn btn-outline w-full justify-center" data-msg="Hi, I would like to enquire about the Elite membership plan (₹2,499/month).">Enquire Now</a>
+      </div>
+    </div>
+    <p class="reveal text-sm text-[var(--muted)] mt-8">Plans and pricing can be customized according to your gym.</p>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="py-24 lg:py-32">
+  <div class="container-custom">
+    <div class="reveal max-w-2xl mb-14">
+      <p class="eyebrow mb-4">Why IronCore</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase">Why members choose us</h2>
+    </div>
+    <div class="reveal-stagger grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="flex flex-col gap-3">
+        <span class="text-3xl">🏆</span><p class="font-semibold">Expert Trainers</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="text-3xl">⚙️</span><p class="font-semibold">Modern Equipment</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="text-3xl">📋</span><p class="font-semibold">Personalized Plans</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="text-3xl">🥗</span><p class="font-semibold">Nutrition Guidance</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="text-3xl">✨</span><p class="font-semibold">Clean &amp; Hygienic</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="text-3xl">🤝</span><p class="font-semibold">Friendly Community</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="text-3xl">📅</span><p class="font-semibold">Flexible Memberships</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="text-3xl">📊</span><p class="font-semibold">Progress Tracking</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-24 lg:py-32 bg-[var(--surface)] border-y border-[var(--border)]">
+  <div class="container-custom max-w-3xl">
+    <div class="reveal mb-12">
+      <p class="eyebrow mb-4">FAQ</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase">Common questions</h2>
+    </div>
+
+    <div id="faq-list" class="reveal divide-y divide-[var(--border)] border-t border-b border-[var(--border)]">
+      <!-- injected -->
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 lg:py-32">
+  <div class="container-custom">
+    <div class="reveal text-center max-w-2xl mx-auto mb-16">
+      <p class="eyebrow mb-4">Get In Touch</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase mb-4">Ready to start your transformation?</h2>
+      <p class="text-[var(--muted)]">Your fitness journey starts with one decision.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-5 gap-12">
+      <div class="reveal lg:col-span-2 space-y-7">
+        <div class="flex gap-4">
+          <span class="text-2xl">📍</span>
+          <div><p class="font-semibold mb-1">Address</p><p class="text-[var(--muted)] text-sm">123 Fitness Street, Kota, Rajasthan</p></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-2xl">📞</span>
+          <div><p class="font-semibold mb-1">Phone</p><a href="tel:+919876543210" class="text-[var(--muted)] text-sm hover:text-[var(--accent)]">+91 98765 43210</a></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-2xl">📧</span>
+          <div><p class="font-semibold mb-1">Email</p><a href="mailto:info@fitgymdemo.com" class="text-[var(--muted)] text-sm hover:text-[var(--accent)]">info@fitgymdemo.com</a></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-2xl">🕐</span>
+          <div><p class="font-semibold mb-1">Timings</p><p class="text-[var(--muted)] text-sm">Monday – Saturday, 5:30 AM – 10:00 PM</p></div>
+        </div>
+        <a href="#" class="contact-wa-btn btn-wa w-full justify-center" data-msg="Hi, I found your gym website and I'm interested in joining. Please share the membership details.">Chat on WhatsApp</a>
+      </div>
+
+      <form id="enquiry-form" class="reveal lg:col-span-3 card p-8 space-y-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input required name="name" type="text" placeholder="Full Name" class="w-full px-4 py-3 text-sm">
+          <input required name="phone" type="tel" placeholder="Phone Number" class="w-full px-4 py-3 text-sm">
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <select name="goal" class="w-full px-4 py-3 text-sm">
+            <option>Fitness Goal</option>
+            <option>Weight Loss</option>
+            <option>Muscle Building</option>
+            <option>General Fitness</option>
+            <option>Strength Training</option>
+          </select>
+          <select name="training" class="w-full px-4 py-3 text-sm">
+            <option>Preferred Training</option>
+            <option>Personal Training</option>
+            <option>Group Training</option>
+            <option>Strength Training</option>
+            <option>Cardio</option>
+          </select>
+        </div>
+        <textarea name="message" rows="4" placeholder="Message" class="w-full px-4 py-3 text-sm"></textarea>
+        <button type="submit" class="btn-primary w-full justify-center">Send Enquiry</button>
+        <p id="form-success" class="hidden text-sm text-[var(--lime)] pt-2">✓ Thank you! Your enquiry has been received — our team will contact you shortly.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-[var(--border)] pt-16 pb-8">
+  <div class="container-custom grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+    <div>
+      <p class="font-display text-2xl mb-4">IRON<span class="accent-text">CORE</span></p>
+      <p class="text-[var(--muted)] text-sm leading-relaxed mb-5">Premium fitness training, expert trainers and personalized nutrition guidance in Kota, Rajasthan.</p>
+      <div class="flex gap-4 text-xl">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="YouTube">▶️</a>
+      </div>
+    </div>
+    <div>
+      <p class="font-semibold mb-4">Quick Links</p>
+      <ul class="space-y-2 text-sm text-[var(--muted)]">
+        <li><a href="#about" class="hover:text-[var(--accent)]">About</a></li>
+        <li><a href="#services" class="hover:text-[var(--accent)]">Services</a></li>
+        <li><a href="#trainers" class="hover:text-[var(--accent)]">Trainers</a></li>
+        <li><a href="#pricing" class="hover:text-[var(--accent)]">Membership</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold mb-4">Services</p>
+      <ul class="space-y-2 text-sm text-[var(--muted)]">
+        <li>Personal Training</li>
+        <li>Strength Training</li>
+        <li>Weight Loss Program</li>
+        <li>Diet &amp; Nutrition</li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold mb-4">Contact</p>
+      <ul class="space-y-2 text-sm text-[var(--muted)]">
+        <li>123 Fitness Street, Kota, Rajasthan</li>
+        <li>+91 98765 43210</li>
+        <li>info@fitgymdemo.com</li>
+        <li>Mon – Sat, 5:30 AM – 10:00 PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-custom pt-8 border-t border-[var(--border)] text-xs text-[var(--muted)] flex flex-col sm:flex-row justify-between gap-2">
+    <p>© 2026 IronCore Fitness. All Rights Reserved.</p>
+    <p>Website by your studio — client demo</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a id="wa-float" href="#" aria-label="Chat on WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#08120C"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h0c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.4-8.4zM12.1 21.4c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.9 1 1-3.8-.2-.4a9.6 9.6 0 0 1-1.5-5.1c0-5.4 4.4-9.7 9.9-9.7 2.6 0 5.1 1 7 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.5 9.7-9.9 9.7zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.3 5.3 4.6.7.3 1.3.5 1.8.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <button id="lightbox-close" class="absolute top-6 right-6 text-white text-3xl" aria-label="Close">✕</button>
+  <img id="lightbox-img" src="" class="max-w-full max-h-full object-contain">
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
