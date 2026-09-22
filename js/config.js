@@ -1,5 +1,5 @@
 window.SITE_CONFIG = {
-  whatsappNumber: "919876543210",
+  whatsappNumber: "919024100955",
   gymName: "IronCore Fitness",
   phone: "+91 90241 00955",
   email: "info@fitgymdemo.com",
